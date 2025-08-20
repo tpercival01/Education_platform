@@ -52,11 +52,11 @@ Once the application is running:
 *   **Quizzes:** Engage with interactive quizzes at the end of each module to test your understanding.
 *   **Progress:** Monitor your learning journey and module completion.
 
-## 8. Project Status
+## Project Status
 
 This project is currently an **MVP (Minimum Viable Product)** under active development for an **MSc in Artificial Intelligence dissertation** (due January 6th, 2026). The primary focus is on developing and rigorously evaluating the effectiveness of the educational toolkit.
 
-## 9. Future Enhancements
+## Future Enhancements
 
 While the current scope is focused on the educational toolkit MVP, planned future enhancements beyond the dissertation include:
 
@@ -65,12 +65,10 @@ While the current scope is focused on the educational toolkit MVP, planned futur
 *   Advanced gamification features within the toolkit.
 *   Expansion of content with more varied and challenging examples.
 
-## 10. License
+## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details. (Note: You'll need to create an actual `LICENSE` file in your repo).
 
-## 11. Contact
+## Contact
 
-Thomas Percival – [thomaspercival@live.co.uk] – [https://linkedin.com/in/thomaspercival]
-
-Project Link: [https://github.com/your-username/educational-toolkit](https://github.com/your-username/educational-toolkit)
+Thomas Percival – [thomaspercival@live.co.uk](Email) – [https://linkedin.com/in/thomaspercival](LinkedIn)
