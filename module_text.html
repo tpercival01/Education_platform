@@ -8,18 +8,23 @@
     <script src="quiz.js"></script>
 </head>
 <body>
-    <header><a href="index.html" class="logo">← Back to Dashboard</a></header>
-    
+    <header>
+        <a href="modules.html" class="logo">← Back to Modules</a>
+        <div class="logo">ALETHEIA <span style="font-weight:normal; font-size: 0.8em; color:#94a3b8;">ACADEMY</span></div>
+        <div class="user-stats">
+            <span id="xp-text">0% Mastery</span>
+        </div>
+    </header>
     <div class="container">
         <h1>Understanding LLMs</h1>
         <p>Large Language Models (LLMs) do not "think". They calculate probabilities...</p>
-        <!-- PASTE YOUR LIT REVIEW CONTENT HERE -->
         
         <hr class="divider">
         
-        <h2>Assessment</h2>
+        <h2>Quiz: Can you spot the AI?</h2>
+
         <div class="quiz-box">
-            <p><strong>Identify the AI generated text:</strong></p>
+            <p><strong>1. Identify the AI generated text:</strong></p>
             
             <button class="option" onclick="checkAnswer(this, false, 'text')">
                 "Honestly idk man, looks kinda fake to me lol."
@@ -27,6 +32,34 @@
             
             <button class="option" onclick="checkAnswer(this, true, 'text')">
                 "Furthermore, it is crucial to delve into the multifaceted implications of this technology."
+            </button>
+            
+            <p class="feedback"></p>
+        </div>
+
+        <div class="quiz-box">
+            <p><strong>2. Which product review was written by AI?</strong></p>
+            
+            <button class="option" onclick="checkAnswer(this, true, 'text')">
+                "The device offers a seamless blend of ergonomic design and high-performance utility, making it a valuable addition to any household."
+            </button>
+            
+            <button class="option" onclick="checkAnswer(this, false, 'text')">
+                "Box was crushed when it arrived and the thing smells like burning plastic. refund pls."
+            </button>
+            
+            <p class="feedback"></p>
+        </div>
+
+        <div class="quiz-box">
+            <p><strong>3. Which response is synthetic?</strong></p>
+            
+            <button class="option" onclick="checkAnswer(this, false, 'text')">
+                "No way am I doing that, are you crazy??"
+            </button>
+            
+            <button class="option" onclick="checkAnswer(this, true, 'text')">
+                "I cannot fulfill this request as it may violate safety guidelines regarding dangerous activities."
             </button>
             
             <p class="feedback"></p>

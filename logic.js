@@ -8,11 +8,10 @@ const STATE = {
     }
 };
 
-// tracking specific questions
 const PROGRESS = {
-    text: [0, 0, 0], // 3 questions for text
-    image: [0, 0],   // 2 questions for image
-    video: [0, 0]    // 2 questions for video
+    text: [0, 0, 0],
+    image: [0, 0],  
+    video: [0, 0] 
 };
 
 function submitAnswer(module, questionIndex, isCorrect) {
@@ -27,11 +26,10 @@ function checkCompletion(module) {
     const total = PROGRESS[module].length;
     
     if (score === total) {
-        completeModule(module); // This triggers your XP and localStorage save
+        completeModule(module); 
     }
 }
 
-// Load progress on page load
 function loadState() {
     const saved = localStorage.getItem('aletheia_progress');
     if (saved) {
@@ -42,13 +40,11 @@ function loadState() {
     }
 }
 
-// Save progress
 function saveState() {
     localStorage.setItem('aletheia_progress', JSON.stringify(STATE));
     updateUI();
 }
 
-// Complete a module
 function completeModule(moduleName) {
     if (!STATE.modules[moduleName]) {
         STATE.modules[moduleName] = true;
@@ -59,7 +55,6 @@ function completeModule(moduleName) {
     }
 }
 
-// Update the visual bars
 function updateUI() {
     const bar = document.getElementById('progress-fill');
     const text = document.getElementById('xp-text');
@@ -68,14 +63,12 @@ function updateUI() {
         bar.style.width = `${STATE.xp}%`;
         text.innerText = `${STATE.xp}% Mastery`;
         
-        // Color shift based on progress
         if (STATE.xp === 100) {
             bar.style.backgroundColor = '#22c55e';
             text.innerText = "CERTIFIED DETECTIVE";
         }
     }
     
-    // Lock/Unlock Logic (Optional visual cues)
     updateCardStatus('card-text', STATE.modules.text);
     updateCardStatus('card-image', STATE.modules.image);
     updateCardStatus('card-audio', STATE.modules.audio);

@@ -1,26 +1,161 @@
-body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; line-height: 1.6; }
-header { background: #1e293b; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; }
-.logo { font-size: 1.5rem; font-weight: bold; color: #38bdf8; text-decoration: none; }
-nav a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
-nav a:hover { color: #38bdf8; }
-.hero { text-align: center; padding: 4rem 1rem; }
-h1 { font-size: 3rem; margin-bottom: 1rem; color: #f8fafc; }
-.btn { display: inline-block; background: #38bdf8; color: #0f172a; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
-.container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-.card { background: #1e293b; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid #334155; }
-.quiz-box { background: #0f172a; padding: 1rem; border-radius: 4px; margin-top: 1rem; cursor: pointer; border: 1px solid #334155; }
-.quiz-box:hover { border-color: #38bdf8; }
-.answer { display: none; margin-top: 0.5rem; font-weight: bold; }
-.human { color: #4ade80; } .ai { color: #f472b6; }
-.progress-container { background: #1e293b; height: 10px; width: 100%; position: sticky; top: 0; }
-.progress-bar { width: 100%; height: 100%; }
-#progress-fill { height: 100%; background: #38bdf8; transition: width 0.5s ease; }
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.6;
+}
 
-.card.completed { border-color: #22c55e; opacity: 0.6; }
-.card.completed .status { color: #22c55e; }
-.status { font-size: 0.8rem; font-weight: bold; letter-spacing: 1px; color: #94a3b8; }
+header {
+    background: #1e293b;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+}
 
-.option { display: block; width: 100%; padding: 1rem; margin: 0.5rem 0; background: #0f172a; border: 1px solid #334155; color: #fff; text-align: left; cursor: pointer; border-radius: 6px; }
-.option:hover { background: #1e293b; }
-.feedback { display: none; margin-top: 10px; font-weight: bold; }
-.divider { border: 0; border-top: 1px solid #334155; margin: 3rem 0; }
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.card {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155;
+}
+
+.quiz-box {
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 1px solid #334155;
+}
+
+.quiz-box:hover {
+    border-color: #38bdf8;
+}
+
+.answer {
+    display: none;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.human {
+    color: #4ade80;
+}
+
+.ai {
+    color: #f472b6;
+}
+
+.progress-container {
+    background: #1e293b;
+    height: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+}
+
+#progress-fill {
+    height: 100%;
+    background: #38bdf8;
+    transition: width 0.5s ease;
+}
+
+.card.completed {
+    border-color: #22c55e;
+    opacity: 0.6;
+}
+
+.card.completed .status {
+    color: #22c55e;
+}
+
+.status {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.option:hover {
+    background: #1e293b;
+}
+
+.feedback {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 3rem 0;
+}
